@@ -1,0 +1,9 @@
+{
+  "development": {
+    "host": "localhost",
+    "dialect": "mysql",
+    "username": "root",
+    "password": "",
+    "database": "vascomm_user"
+  }
+}
