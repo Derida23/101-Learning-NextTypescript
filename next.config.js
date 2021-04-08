@@ -21,6 +21,9 @@ const plugins = [
         javascriptEnabled: true,
         modifyVars: themeVariables, // make your antd custom effective
       },
+      devIndicators: {
+        autoPrerender: false,
+      },
       webpack: (config, { isServer }) => {
         if (isServer) {
           const antStyles = /antd\/.*?\/style.*?/;
