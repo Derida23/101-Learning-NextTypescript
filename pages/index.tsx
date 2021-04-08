@@ -96,7 +96,8 @@ const Index: React.FunctionComponent = (props: any) => {
             <div
               style={{ width: "100%", textAlign: "center", marginTop: "30px" }}
             >
-              Anda Bukan Admin, Silahkan untuk login admin untuk melihat list
+              Anda Bukan Admin, Silahkan login menggunakan admin untuk melihat
+              daftar pengguna
             </div>
             <div style={{ width: "100%", textAlign: "center" }}>
               Redirect to User Details .....

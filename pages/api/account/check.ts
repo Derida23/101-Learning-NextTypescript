@@ -37,7 +37,7 @@ export default function Handle(req: NextApiRequest, res: NextApiResponse) {
       res.status(404).end();
     }
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(500).end();
   }
 }

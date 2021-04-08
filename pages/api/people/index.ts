@@ -68,8 +68,8 @@ const People = async (req: NextApiRequest, res: NextApiResponse) => {
           ...body,
           username: body.email,
           password: hashPassword,
-          addr_province_code: 0,
-          addr_city_code: 0,
+          addr_province_code: body?.addr_province_code ?? 0,
+          addr_city_code: body?.addr_city_code ?? 0,
           addr_district_code: 0,
           role: "user",
         };

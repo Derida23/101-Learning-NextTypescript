@@ -16,10 +16,10 @@ const initialData: LoginSubmit = {
 const Login: React.FunctionComponent = (props: any) => {
   const [loading, setLoading] = useState<boolean>(false);
   const [dataLogin, setDataLogin] = useState<LoginSubmit>(initialData);
-  const [dataError, setDataError] = useState<any>(null);
+  const [dataError, setDataError] = useState<any>([]);
 
   const handleChange = (e: any) => {
-    setDataError(null);
+    setDataError([]);
     const { name, value } = e.currentTarget;
     setDataLogin({ ...dataLogin, [name]: value });
   };
