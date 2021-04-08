@@ -39,6 +39,8 @@ type Payload = {
   gender: String;
   seller_id: String;
   verification_status: String;
+  role: String;
+  status: String;
 };
 
 const Login = async (req: NextApiRequest, res: NextApiResponse) => {
@@ -112,6 +114,8 @@ const Login = async (req: NextApiRequest, res: NextApiResponse) => {
             userGender: String = dataUser.gender,
             userSeller: String = dataUser.seller_id,
             userVerification: String = dataUser.verification_status;
+          const userRole: String = dataUser.role;
+          const userStatus: String = dataUser.status;
 
           // Comparing Password --->
           await bcrypt
@@ -142,6 +146,8 @@ const Login = async (req: NextApiRequest, res: NextApiResponse) => {
                   gender: userGender,
                   seller_id: userSeller,
                   verification_status: userVerification,
+                  role: userRole,
+                  status: userStatus,
                 };
 
                 jwt.sign(

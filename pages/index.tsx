@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import { Spin, Table, Row, Col, Input, Radio, Tooltip, Button } from "antd";
 import { UndoOutlined } from "@ant-design/icons";
 import Router from "next/router";
+import AuthLogout from "../components/Auth/AuthLogout";
+
 const dataSource = [
   {
     key: "1",
@@ -90,6 +92,7 @@ const Index: React.FunctionComponent = (props: any) => {
               </Col>
             </Row>
             <Table dataSource={dataSource} columns={columns} />
+            <AuthLogout props={{ user }} />
           </>
         ) : (
           <>

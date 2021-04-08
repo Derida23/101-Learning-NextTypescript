@@ -27,7 +27,6 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children, title }) => (
       </Link>
     </header>
     <main className={styles.main}>{children}</main>
-
     <footer className={styles.footer}>
       Arian Derida @ Fullstack Developer - Test Vascomm 2021
     </footer>
