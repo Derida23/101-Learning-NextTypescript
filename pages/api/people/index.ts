@@ -93,7 +93,7 @@ const People = async (req: NextApiRequest, res: NextApiResponse) => {
             status: { [Op.like]: `%${active ? active : ""}%` },
           },
 
-          limit: limit ? 10 : req.query.limit,
+          limit: limit ? 5 : req.query.limit,
           offset: page ? (page - 1) * limit : 0,
         });
 

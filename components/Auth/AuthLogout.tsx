@@ -2,7 +2,7 @@ import React from "react";
 import { setLogout } from "../../libs/middleware/utils";
 import { LogoutOutlined } from "@ant-design/icons";
 
-const AuthLogout: React.ReactFragment = ({ props }: any) => {
+const AuthLogout: React.FunctionComponent = ({ props }: any) => {
   const { user } = props;
   return (
     <div
