@@ -80,7 +80,7 @@ export function absoluteUrl(req: NextApiRequest, setLocalhost: any) {
  */
 
 export async function setLogout() {
-  const resp = await axios.post("localhost/api/account/logout");
+  const resp = await axios.post("http://localhost:3000/api/account/logout");
   if (resp.data.success) {
     Router.reload();
   }
